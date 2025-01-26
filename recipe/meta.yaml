@@ -26,7 +26,7 @@ test:
   imports:
     - desc_dc2_dm_data
   requires:
-    - stackvana =0.2021.6
+    - stackvana =0.2021
     - deprecated <=1.2.10
   # no pip check since it fails
     - python {{ python_min }}
