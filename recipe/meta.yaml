@@ -1,5 +1,6 @@
 {% set name = "lsstdesc-dc2-dm-data" %}
 {% set version = "0.9.1" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -23,12 +24,12 @@ requirements:
     - python >={{ python_min }}
 
 test:
+  # no pip check since it fails
   imports:
     - desc_dc2_dm_data
   requires:
-    - stackvana =0.2021
+    - stackvana =0.2021.6
     - deprecated <=1.2.10
-  # no pip check since it fails
     - python {{ python_min }}
 
 about:
